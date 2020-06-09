@@ -14,5 +14,5 @@ to mimic the possible energy transfer in the turbulent cascade process. The P mo
 multifractal time series. The P model considers equal lengths (l1 = l2) and unequal weights (p1 != p2 and p1 + p2 +dp = 1). 
 For further details refer: 
 Joshi et al., Structural characterization of the equatorial F region plasma irregularities in the multifractal context,
-Annales Geophysicae, 38, 2, 2020. (https://www.ann-geophys.net/38/445/2020/)
+Annales Geophysicae, 38, 2, 2020 (https://www.ann-geophys.net/38/445/2020/).
 Please cite the above mentioned article when using this code. 
