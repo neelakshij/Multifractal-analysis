@@ -42,15 +42,6 @@ function [alpha,falpha]=pmodel(p1,l1,dp)
     	   falpha(i)=(bt(i)*log(bt(i)) - (bt(i)+1)*log(bt(i)+1))/(log(l1) + bt(i)*log(l2));
 	end
  	
-	if (log(p1)/log(l1)) < (log(p2)/log(l2))
-     	   amin = log(p1)/log(l1);
-           amax = log(p2)/log(l2);
-        else
-           amax = log(p1)/log(l1);
-           amin = log(p2)/log(l2);
-        end
-
-
 	figure; plot(alpha,falpha,'-ok','linewidth',1,'markersize',5);
 	title({'P model spectrum', ['p1 =' num2str(p1),' l1=',num2str(l1),' dp=' num2str(dp)]});
 	xlabel('\alpha'); ylabel('f(\alpha)');
