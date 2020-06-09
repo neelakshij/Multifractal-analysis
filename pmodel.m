@@ -1,12 +1,11 @@
 %{ 
    Credit: Neelakshi Joshi 
-   This code is written by Dr. Neelakshi Joshi for her thesis work at National Institute for Space Research (INPE), Brazil.
+   This code is written by Dr. Neelakshi Joshi for her thesis work done at National Institute for Space Research (INPE), Brazil.
    Advisors: Dr. Reinaldo Rosa & Dr. Stephan Stephany.
 
    This code generates anaytical "P model singularity spectrum" based on the generalized two-scale weighted Cantor set.
    References: 1) Meneveau and Sreenivasan, Physical Review Letters, 59, 1987.
 	       2) Halsey et al., Physical Review A, 33, 2, 1986.
-
 
    Inputs: 
 	p1 = probability parameter, 0 < p1 < 1
