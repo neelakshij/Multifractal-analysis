@@ -15,14 +15,14 @@
              needCorrection parameter decides how to define profile to implement the MFDFA, 
              according to the conditions described by Ihlen, 2012 in table 1.
 	needCorrection = 0 then profile = cumsum(data - mean(data)
-	needCorrection = 0 then profile = diff(data)	
+	needCorrection = 1 then profile = diff(data)	
 	needCorrection = value other than 0 and 1 then profile = data
    
    Outputs:
-	Fq = qth order Fluctuation function
+	Fqs = qth order Fluctuation function
 	hq = the generalized Hurst exponents
 	tq = the classical multifractal exponents
-	alpha and falpha = multifractal exponents
+	alpha and falpha = multifractal spectrum
 
 """
 
