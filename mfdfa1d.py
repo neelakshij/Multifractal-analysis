@@ -71,7 +71,8 @@ def mfdfa_frwd(data, order, scales, q, needCorrection):
     
     return Fqs, hq, tq, alpha, falpha
 
+def main():
+     Fqs, hq, tq, alpha, falpha = mfdfa_frwd(data, order, scales, q, needCorrection)	
 
 if __name__ == "__main__":
-    
-     Fqs, hq, tq, alpha, falpha = mfdfa_frwd(data, order, scales, q, needCorrection)
+    main()
