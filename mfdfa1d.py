@@ -69,4 +69,4 @@ def mfdfa_frwd(data, order, scales, q, needCorrection):
     alpha = np.diff(tauq) / (q[1]-q[0])
     falpha = (q[:-1]*alpha) - tauq[:-1]
     
-    return Fqs, hq, tq, alpha, falpha
+    return Fqs, hq, tauq, alpha, falpha
