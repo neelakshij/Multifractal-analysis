@@ -6,17 +6,17 @@
    
    Few steps have been adapted from author "Dominik Krzeminski (dokato)" as it gives easier way to cut the series in smaller segments to do    
    local detrending. Auhtor's original code for DFA can be found at https://github.com/dokato/dfa/blob/master/dfa.py
-   
+  
+   needCorrection parameter decides how to define profile to implement the MFDFA, according to the conditions described by Ihlen, 2012 in table 1.
+  
    Inputs: 
 	data = timeseries (1-d array)
 	m = detrending order (int)
         scale = scales (1-d array)
         q = moments (1-d array)
-             needCorrection parameter decides how to define profile to implement the MFDFA, 
-             according to the conditions described by Ihlen, 2012 in table 1.
-	needCorrection = 0 then profile = cumsum(data - mean(data)
-	needCorrection = 1 then profile = diff(data)	
-	needCorrection = value other than 0 and 1 then profile = data
+	needCorrection   = 0 then profile = cumsum(data - mean(data)
+			 = 1 then profile = diff(data)	
+			 = value other than 0 and 1 then profile = data
    
    Outputs:
 	Fqs = qth order Fluctuation function
@@ -70,9 +70,3 @@ def mfdfa_frwd(data, order, scales, q, needCorrection):
     falpha = (q[:-1]*alpha) - tauq[:-1]
     
     return Fqs, hq, tq, alpha, falpha
-
-def main():
-     Fqs, hq, tq, alpha, falpha = mfdfa_frwd(data, order, scales, q, needCorrection)	
-
-if __name__ == "__main__":
-    main()
